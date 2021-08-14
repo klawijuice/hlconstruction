@@ -24,8 +24,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $posts = Product::with(['poster'])->latest()->online()->paginate(10);
-        return view('guest.products.index', compact('posts'));
+//        $posts = Product::with(['poster'])->latest()->online()->paginate(10);
+        return view('guest.pages.all-products');
     }
 
     /**

@@ -1,8 +1,4 @@
-@extends('layouts.guest.app')
-@section('page.style')
-
-@endsection
-@section('content')
+<x-app-layout>
     <!-- Hero Start -->
     <section class="bg-half-260 d-table w-100" id="home">
         <div class="bg-overlay"></div>
@@ -10,7 +6,9 @@
             <div class="row mt-5 justify-content-center">
                 <div class="col-12">
                     <div class="title-heading text-center">
-                        <h4 class="display-4 fw-bold text-white title-dark mb-3">Find your perfect property</h4>
+                        <h4 class="display-4 fw-bold text-white title-dark mb-3">
+                            Trouvez votre propriété idéale
+                        </h4>
                         <p class="para-desc text-white-50 mb-0 mx-auto">Launch your campaign and benefit from our
                             expertise on designing and managing conversion centered bootstrap v5 html page.</p>
                     </div>
@@ -34,7 +32,7 @@
                                 <a class="nav-link py-2 px-5 active rounded" id="buy-login" data-bs-toggle="pill"
                                    href="#buy" role="tab" aria-controls="buy" aria-selected="false">
                                     <div class="text-center">
-                                        <h6 class="mb-0">Buy</h6>
+                                        <h6 class="mb-0">Acheter</h6>
                                     </div>
                                 </a><!--end nav link-->
                             </li><!--end nav item-->
@@ -43,7 +41,7 @@
                                 <a class="nav-link py-2 px-5 rounded" id="sold-login" data-bs-toggle="pill" href="#sold"
                                    role="tab" aria-controls="sold" aria-selected="false">
                                     <div class="text-center">
-                                        <h6 class="mb-0">Sold</h6>
+                                        <h6 class="mb-0">Vendre</h6>
                                     </div>
                                 </a><!--end nav link-->
                             </li><!--end nav item-->
@@ -52,7 +50,7 @@
                                 <a class="nav-link py-2 px-5 rounded" id="rent-login" data-bs-toggle="pill" href="#rent"
                                    role="tab" aria-controls="rent" aria-selected="false">
                                     <div class="text-center">
-                                        <h6 class="mb-0">Rent</h6>
+                                        <h6 class="mb-0">Louer</h6>
                                     </div>
                                 </a><!--end nav link-->
                             </li><!--end nav item-->
@@ -119,7 +117,7 @@
                                         </div><!--end col-->
 
                                         <div class="col-12">
-                                            <a href="javascript:void(0)" class="btn btn-primary">Search now</a>
+                                            <a href="javascript:void(0)" class="btn btn-primary">Recherche</a>
                                         </div><!--end col-->
                                     </div><!--end row-->
                                 </form><!--end form-->
@@ -289,7 +287,7 @@
                         </div>
 
                         <div class="card-body p-0 mt-4">
-                            <a href="javascript:void(0)" class="title h5 text-dark">Property Lookup</a>
+                            <a href="javascript:void(0)" class="title h5 text-dark">Recherche de propriété</a>
                             <p class="text-muted mt-3 mb-0">Composed in a pseudo-Latin language which more or less
                                 pseudo-Latin language corresponds.</p>
                             <div class="mt-2">
@@ -307,7 +305,7 @@
                         </div>
 
                         <div class="card-body p-0 mt-4">
-                            <a href="javascript:void(0)" class="title h5 text-dark">Buy / Sell Property</a>
+                            <a href="javascript:void(0)" class="title h5 text-dark">Acheter / Vendre une propriété</a>
                             <p class="text-muted mt-3 mb-0">Composed in a pseudo-Latin language which more or less
                                 pseudo-Latin language corresponds.</p>
                             <div class="mt-2">
@@ -324,13 +322,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-4">
                     <div class="section-title text-center text-lg-start mb-4 mb-lg-0">
-                        <span class="badge rounded-pill bg-soft-primary">Featured Items</span>
-                        <h4 class="title mt-3 mb-4">Latest Property</h4>
+                        <span class="badge rounded-pill bg-soft-primary">En vedette</span>
+                        <h4 class="title mt-3 mb-4">Nos Dernières propriétés</h4>
                         <p class="text-muted mx-auto mx-lg-star para-desc mb-0">Start working with <span
                                 class="text-primary fw-bold">Landrick</span> that can provide everything you need to
                             generate awareness, drive traffic, connect.</p>
                         <div class="mt-4 d-none d-lg-block">
-                            <a href="javascript:void(0)" class="btn btn-primary">See More</a>
+                            <a href="javascript:void(0)" class="btn btn-primary">Voir plus</a>
                         </div>
                     </div>
                 </div><!--end col-->
@@ -339,9 +337,11 @@
                     <div class="tiny-two-item">
                         <div class="tiny-slide">
                             <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
+                                class="card client-testi shop-list border-0 shadow position-relative
+                                overflow-hidden m-2">
                                 <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p1.jpg" class="img-fluid"
+                                    <a href="shop-product-detail.html"><img src="{{asset("guest/images/real/p1.jpg")}}"
+                                                                            class="img-fluid"
                                                                             alt=""></a>
                                     <ul class="list-unstyled shop-icons">
                                         <li class="list-inline-item"><a href="javascript:void(0)"
@@ -369,12 +369,13 @@
                                 </div>
                             </div><!--end items-->
                         </div>
-
                         <div class="tiny-slide">
                             <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
+                                class="card client-testi shop-list border-0 shadow position-relative
+                                overflow-hidden m-2">
                                 <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p2.jpg" class="img-fluid"
+                                    <a href="shop-product-detail.html"><img src="{{asset("guest/images/real/p1.jpg")}}"
+                                                                            class="img-fluid"
                                                                             alt=""></a>
                                     <ul class="list-unstyled shop-icons">
                                         <li class="list-inline-item"><a href="javascript:void(0)"
@@ -402,177 +403,13 @@
                                 </div>
                             </div><!--end items-->
                         </div>
-
                         <div class="tiny-slide">
                             <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
+                                class="card client-testi shop-list border-0 shadow position-relative
+                                overflow-hidden m-2">
                                 <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p3.jpg" class="img-fluid"
-                                                                            alt=""></a>
-                                    <ul class="list-unstyled shop-icons">
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-estate"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-heart"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-camera"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body content p-4">
-                                    <a href="javascript:void(0)" class="text-dark product-name h6">Luxury Apartment In
-                                        chelsea</a>
-                                    <ul class="list-unstyled text-muted mt-2 mb-0">
-                                        <li class="list-inline-item me-3"><i class="uil uil-bed me-1"></i>1 Bed</li>
-                                        <li class="list-inline-item"><i class="uil uil-bath me-1"></i>1 Bath</li>
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-between mt-2 mb-0">
-                                        <li class="list-inline-item"><b>$ 44000</b></li>
-                                        <li class="list-inline-item text-muted">$ 850 / sqft</li>
-                                    </ul>
-                                </div>
-                            </div><!--end items-->
-                        </div>
-
-                        <div class="tiny-slide">
-                            <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
-                                <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p4.jpg" class="img-fluid"
-                                                                            alt=""></a>
-                                    <ul class="list-unstyled shop-icons">
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-estate"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-heart"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-camera"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body content p-4">
-                                    <a href="javascript:void(0)" class="text-dark product-name h6">Luxury Apartment In
-                                        chelsea</a>
-                                    <ul class="list-unstyled text-muted mt-2 mb-0">
-                                        <li class="list-inline-item me-3"><i class="uil uil-bed me-1"></i>1 Bed</li>
-                                        <li class="list-inline-item"><i class="uil uil-bath me-1"></i>1 Bath</li>
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-between mt-2 mb-0">
-                                        <li class="list-inline-item"><b>$ 44000</b></li>
-                                        <li class="list-inline-item text-muted">$ 850 / sqft</li>
-                                    </ul>
-                                </div>
-                            </div><!--end items-->
-                        </div>
-
-                        <div class="tiny-slide">
-                            <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
-                                <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p5.jpg" class="img-fluid"
-                                                                            alt=""></a>
-                                    <ul class="list-unstyled shop-icons">
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-estate"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-heart"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-camera"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body content p-4">
-                                    <a href="javascript:void(0)" class="text-dark product-name h6">Luxury Apartment In
-                                        chelsea</a>
-                                    <ul class="list-unstyled text-muted mt-2 mb-0">
-                                        <li class="list-inline-item me-3"><i class="uil uil-bed me-1"></i>1 Bed</li>
-                                        <li class="list-inline-item"><i class="uil uil-bath me-1"></i>1 Bath</li>
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-between mt-2 mb-0">
-                                        <li class="list-inline-item"><b>$ 44000</b></li>
-                                        <li class="list-inline-item text-muted">$ 850 / sqft</li>
-                                    </ul>
-                                </div>
-                            </div><!--end items-->
-                        </div>
-
-                        <div class="tiny-slide">
-                            <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
-                                <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p6.jpg" class="img-fluid"
-                                                                            alt=""></a>
-                                    <ul class="list-unstyled shop-icons">
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-estate"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-heart"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-camera"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body content p-4">
-                                    <a href="javascript:void(0)" class="text-dark product-name h6">Luxury Apartment In
-                                        chelsea</a>
-                                    <ul class="list-unstyled text-muted mt-2 mb-0">
-                                        <li class="list-inline-item me-3"><i class="uil uil-bed me-1"></i>1 Bed</li>
-                                        <li class="list-inline-item"><i class="uil uil-bath me-1"></i>1 Bath</li>
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-between mt-2 mb-0">
-                                        <li class="list-inline-item"><b>$ 44000</b></li>
-                                        <li class="list-inline-item text-muted">$ 850 / sqft</li>
-                                    </ul>
-                                </div>
-                            </div><!--end items-->
-                        </div>
-
-                        <div class="tiny-slide">
-                            <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
-                                <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p7.jpg" class="img-fluid"
-                                                                            alt=""></a>
-                                    <ul class="list-unstyled shop-icons">
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-estate"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-heart"></i></a></li>
-                                        <li class="list-inline-item"><a href="javascript:void(0)"
-                                                                        class="btn btn-icon btn-pills btn-primary"><i
-                                                    class="uil uil-camera"></i></a></li>
-                                    </ul>
-                                </div>
-                                <div class="card-body content p-4">
-                                    <a href="javascript:void(0)" class="text-dark product-name h6">Luxury Apartment In
-                                        chelsea</a>
-                                    <ul class="list-unstyled text-muted mt-2 mb-0">
-                                        <li class="list-inline-item me-3"><i class="uil uil-bed me-1"></i>1 Bed</li>
-                                        <li class="list-inline-item"><i class="uil uil-bath me-1"></i>1 Bath</li>
-                                    </ul>
-                                    <ul class="list-unstyled d-flex justify-content-between mt-2 mb-0">
-                                        <li class="list-inline-item"><b>$ 44000</b></li>
-                                        <li class="list-inline-item text-muted">$ 850 / sqft</li>
-                                    </ul>
-                                </div>
-                            </div><!--end items-->
-                        </div>
-
-                        <div class="tiny-slide">
-                            <div
-                                class="card client-testi shop-list border-0 shadow position-relative overflow-hidden m-2">
-                                <div class="shop-image position-relative overflow-hidden shadow">
-                                    <a href="shop-product-detail.html"><img src="images/real/p8.jpg" class="img-fluid"
+                                    <a href="shop-product-detail.html"><img src="{{asset("guest/images/real/p1.jpg")}}"
+                                                                            class="img-fluid"
                                                                             alt=""></a>
                                     <ul class="list-unstyled shop-icons">
                                         <li class="list-inline-item"><a href="javascript:void(0)"
@@ -606,7 +443,7 @@
         </div><!--end container-->
 
         <div class="container-fluid mt-100 mt-60">
-            <div class="rounded shadow py-5" style="background: url('images/real/1.jpg') center center;">
+            <div class="rounded shadow py-5" style="background: url('{{asset("guest/images/real/1.jpg")}}') center center;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
@@ -738,7 +575,7 @@
                                                 text is the 'Lorem Ipsum', which is said to have originated in the 16th
                                                 century. It contains a series of real Latin words. "</p>
                                             <div class="commenter mt-4">
-                                                <img src="images/client/06.jpg"
+                                                <img src="{{asset("guest/images/client/06.jpg")}}"
                                                      class="avatar avatar-small rounded-circle d-block mx-auto shadow-lg"
                                                      alt="">
                                                 <div class="content mt-4">
@@ -883,4 +720,4 @@
         </div><!--end container-->
     </section><!--end section-->
     <!-- End -->
-@endsection
+</x-app-layout>

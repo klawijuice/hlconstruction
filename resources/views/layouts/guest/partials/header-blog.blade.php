@@ -12,7 +12,9 @@
                      <img src="guest/assets/images/fedalon_logo.png" alt="maha" class="img-fluid">
                      <!-- <h2>Maha</h2> -->
                  </a>--}}
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -56,7 +58,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="https://www.dropbox.com/sh/xypewg1vxioizvq/AABrGmsr4NiBOeCoK6krdlqsa?dl=0" target="_blank">
+                            <a class="nav-link"
+                               href="https://www.dropbox.com/sh/xypewg1vxioizvq/AABrGmsr4NiBOeCoK6krdlqsa?dl=0"
+                               target="_blank">
                                 {{ __('guest/layout.resources') }}
                             </a>
                         </li>
@@ -88,10 +92,12 @@
                                                class="d-block"
                                                href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                                                 @if($localeCode === "fr")
-                                                    <img src="/guest/assets/images/languages/francais.png" class="imgdrap"
+                                                    <img src="/guest/assets/images/languages/francais.png"
+                                                         class="imgdrap"
                                                          alt="Responsive image">
                                                 @elseif($localeCode === "en")
-                                                    <img src="/guest/assets/images/languages/anglais.jpg" class="imgdrap"
+                                                    <img src="/guest/assets/images/languages/anglais.jpg"
+                                                         class="imgdrap"
                                                          alt="Responsive image">
                                                 @elseif($localeCode === "zh")
                                                     <img src="/guest/assets/images/languages/chine.png" class="imgdrap"
@@ -104,10 +110,12 @@
                                                class="d-block"
                                                href="javascript:void(0)">
                                                 @if($localeCode === "fr")
-                                                    <img src="/guest/assets/images/languages/francais.png" class="imgdrap"
+                                                    <img src="/guest/assets/images/languages/francais.png"
+                                                         class="imgdrap"
                                                          alt="Responsive image">
                                                 @elseif($localeCode === "en")
-                                                    <img src="/guest/assets/images/languages/anglais.jpg" class="imgdrap"
+                                                    <img src="/guest/assets/images/languages/anglais.jpg"
+                                                         class="imgdrap"
                                                          alt="Responsive image">
                                                 @elseif($localeCode === "zh")
                                                     <img src="/guest/assets/images/languages/chine.png" class="imgdrap"

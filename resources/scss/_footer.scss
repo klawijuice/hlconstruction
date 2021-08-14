@@ -70,7 +70,7 @@
     }
     .footer-border,
     .footer-bar {
-        border-top: 1px solid lighten($footer, 5%);
+        border-top: 1px solid lighten($primary, 5%);
     }
     .border {
         border-color: lighten($footer, 5%) !important;

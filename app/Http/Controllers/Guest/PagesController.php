@@ -54,5 +54,8 @@ class PagesController extends Controller
         return view('guest.pages.about');
     }
 
-
+    public function contact()
+    {
+        return view('guest.pages.contact');
+    }
 }

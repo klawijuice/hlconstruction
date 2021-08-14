@@ -3,7 +3,8 @@
         <div class="menu-list">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="d-xl-none d-lg-none" :href="route('admin.pages.dashboard')">Dashboard</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,17 +26,17 @@
                                 </inertia-link>
 
                                 <div id="link-dashboard"
-                                        class="collapse"
-                                        data-parent="#accordionExample">
+                                     class="collapse"
+                                     data-parent="#accordionExample">
                                 </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"
-                                    :class="{'active' :currentPage('admin.products.index', 'admin.products.online','admin.products.create', 'admin.products.offline', 'admin.products.drafts')}"
-                                    data-toggle="collapse"
-                                    aria-expanded="false"
-                                    data-target="#link-product"
-                                    aria-controls="link-product"
+                                   :class="{'active' :currentPage('admin.products.index', 'admin.products.online','admin.products.create', 'admin.products.offline', 'admin.products.drafts')}"
+                                   data-toggle="collapse"
+                                   aria-expanded="false"
+                                   data-target="#link-product"
+                                   aria-controls="link-product"
                                 >
                                     <i class="fas fa-fw fa-newspaper"></i>
                                     Produits
@@ -64,22 +65,23 @@
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.products.online')"
-                                                            :class="{'active' :currentPage('admin.products.online')}">En ligne
+                                                          :href="route('admin.products.online')"
+                                                          :class="{'active' :currentPage('admin.products.online')}">En
+                                                ligne
                                             </inertia-link>
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.products.offline')"
-                                                            :class="{'active' :currentPage('admin.products.offline')}"
+                                                          :href="route('admin.products.offline')"
+                                                          :class="{'active' :currentPage('admin.products.offline')}"
                                             >
                                                 Hors ligne
                                             </inertia-link>
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.products.drafts')"
-                                                            :class="{'active' :currentPage('admin.products.drafts')}"
+                                                          :href="route('admin.products.drafts')"
+                                                          :class="{'active' :currentPage('admin.products.drafts')}"
                                             >
                                                 Brouillons
                                             </inertia-link>
@@ -89,11 +91,11 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"
-                                    :class="{'active' :currentPage('admin.posts.index', 'admin.posts.online','admin.posts.create', 'admin.posts.offline', 'admin.posts.drafts')}"
-                                    data-toggle="collapse"
-                                    aria-expanded="false"
-                                    data-target="#link-article"
-                                    aria-controls="link-article"
+                                   :class="{'active' :currentPage('admin.posts.index', 'admin.posts.online','admin.posts.create', 'admin.posts.offline', 'admin.posts.drafts')}"
+                                   data-toggle="collapse"
+                                   aria-expanded="false"
+                                   data-target="#link-article"
+                                   aria-controls="link-article"
                                 >
                                     <i class="fas fa-fw fa-newspaper"></i>
                                     Articles
@@ -122,21 +124,22 @@
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.posts.online')"
-                                                            :class="{'active' :currentPage('admin.posts.online')}">En ligne
+                                                          :href="route('admin.posts.online')"
+                                                          :class="{'active' :currentPage('admin.posts.online')}">En
+                                                ligne
                                             </inertia-link>
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.posts.offline')"
-                                                            :class="{'active' :currentPage('admin.posts.offline')}">
+                                                          :href="route('admin.posts.offline')"
+                                                          :class="{'active' :currentPage('admin.posts.offline')}">
                                                 Hors ligne
                                             </inertia-link>
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                        :href="route('admin.posts.drafts')"
-                                                        :class="{'active' :currentPage('admin.posts.drafts')}">
+                                                          :href="route('admin.posts.drafts')"
+                                                          :class="{'active' :currentPage('admin.posts.drafts')}">
                                                 Brouillons
                                             </inertia-link>
                                         </li>
@@ -146,24 +149,24 @@
 
                             <li class="nav-item">
                                 <a class="nav-link"
-                                    :class="{'active' :currentPage('admin.categories.index')}"
-                                    href="#"
-                                    data-toggle="collapse"
-                                    aria-expanded="false"
-                                    data-target="#link-category"
-                                    aria-controls="link-category">
+                                   :class="{'active' :currentPage('admin.categories.index')}"
+                                   href="#"
+                                   data-toggle="collapse"
+                                   aria-expanded="false"
+                                   data-target="#link-category"
+                                   aria-controls="link-category">
                                     <i class="fas fa-fw fa-object-group"></i>
                                     Categories
                                 </a>
                                 <div id="link-category"
-                                        class="collapse submenu"
-                                        data-parent="#accordionExample"
+                                     class="collapse submenu"
+                                     data-parent="#accordionExample"
                                 >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.categories.index')"
-                                                            :class="{'active' :currentPage('admin.categories.index')}"
+                                                          :href="route('admin.categories.index')"
+                                                          :class="{'active' :currentPage('admin.categories.index')}"
                                             >Categories
                                             </inertia-link>
                                         </li>
@@ -172,31 +175,31 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"
-                                    :class="{'active' :currentPage('admin.faq.index','admin.faq.create')}"
-                                    href="#"
-                                    data-toggle="collapse"
-                                    aria-expanded="false"
-                                    data-target="#link-faq"
-                                    aria-controls="link-faq">
+                                   :class="{'active' :currentPage('admin.faq.index','admin.faq.create')}"
+                                   href="#"
+                                   data-toggle="collapse"
+                                   aria-expanded="false"
+                                   data-target="#link-faq"
+                                   aria-controls="link-faq">
                                     <i class="fas fa-fw fa-question"></i>
                                     F.A.Q
                                 </a>
                                 <div id="link-faq"
-                                        class="collapse submenu"
-                                        data-parent="#accordionExample"
+                                     class="collapse submenu"
+                                     data-parent="#accordionExample"
                                 >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.faq.index')"
-                                                            :class="{'active' :currentPage('admin.faq.index')}"
+                                                          :href="route('admin.faq.index')"
+                                                          :class="{'active' :currentPage('admin.faq.index')}"
                                             >Faqs
                                             </inertia-link>
                                         </li>
                                         <li class="nav-item">
                                             <inertia-link class="nav-link"
-                                                            :href="route('admin.faq.create')"
-                                                            :class="{'active' :currentPage('admin.faq.create')}"
+                                                          :href="route('admin.faq.create')"
+                                                          :class="{'active' :currentPage('admin.faq.create')}"
                                             >creer une F.A.Q
                                             </inertia-link>
                                         </li>

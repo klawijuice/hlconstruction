@@ -99,13 +99,13 @@
             background-color: $dark;
             display: block;
             margin-bottom: 5px;
-            transition: transform .5s ease;   
+            transition: transform .5s ease;
             &:last-child {
                 margin-bottom: 0;
             }
         }
     }
-    
+
     //Buy button
     .buy-button {
         float: right;
@@ -153,14 +153,14 @@
         }
     }
     .navbar-toggle {
-        &:hover, 
+        &:hover,
         &:focus,
-        .navigation-menu > li > a:hover, 
+        .navigation-menu > li > a:hover,
         &:focus {
             background-color: transparent;
         }
     }
-  
+
     .navigation-menu {
         list-style: none;
         margin: 0;
@@ -188,7 +188,7 @@
                 padding-right: 15px;
                 &:hover,
                 &:active{
-                    color: $primary;    
+                    color: $primary;
                 }
             }
             .submenu {
@@ -230,7 +230,7 @@
     .menu-extras {
         float: right;
     }
-    
+
     &.scroll {
         background-color: $white;
         border: none;
@@ -240,7 +240,7 @@
                 > a {
                     color: $dark;
                 }
-                
+
                 > .menu-arrow {
                     border-color: $dark;
                 }
@@ -251,11 +251,11 @@
                     > .menu-arrow {
                         border-color: $primary;
                     }
-                } 
-            } 
+                }
+            }
         }
     }
-    
+
     &.defaultscroll{
         &.dark-menubar {
             .logo {
@@ -286,9 +286,9 @@
                     &.active {
                         > a {
                             color: $primary !important;
-                        }      
+                        }
                     }
-                    &:hover, 
+                    &:hover,
                     &.active {
                         > .menu-arrow {
                             border-color: $primary !important;
@@ -297,10 +297,10 @@
                             color: $primary !important;
                         }
                     }
-                } 
+                }
                 .has-submenu {
                     .menu-arrow {
-                        border-color: $dark; 
+                        border-color: $dark;
                     }
                 }
             }
@@ -308,7 +308,7 @@
         &.tagline-height {
             top: 0 !important;
         }
-        
+
         .buy-button {
             .login-btn-primary {
                 display: inline-block;
@@ -381,7 +381,7 @@
                         top: 30px;
                     }
                 }
-            } 
+            }
             > li {
                 .submenu {
                     position: absolute;
@@ -474,7 +474,7 @@
                 &.active > a{
                     color: $primary !important;
                 }
-                
+
                 &.last-elements {
                     .submenu {
                         left: auto;
@@ -496,12 +496,12 @@
                 > li {
                     > a {
                         color: rgba($white, 0.5);
-                    }   
+                    }
                     &.active {
                         > a {
                             color: $white !important;
-                        }      
-                    }           
+                        }
+                    }
                     &:hover {
                         > .menu-arrow {
                             border-color: $white !important;
@@ -510,7 +510,7 @@
                             color: $white !important;
                         }
                     }
-                } 
+                }
                 .has-submenu {
                     .menu-arrow {
                         border-color: rgba($white, 0.5);
@@ -542,11 +542,11 @@
                     }
                 }
             }
-        }  
+        }
         .buy-button {
             padding-left: 15px;
             margin-left: 15px;
-        }      
+        }
         .navbar-toggle {
             display: none;
         }
@@ -576,7 +576,7 @@
         }
     }
 }
-  
+
 @media (max-width: 991px) {
     #topnav {
         background-color: $white;
@@ -825,7 +825,7 @@
     }
 }
 
-//Sidebar-nav 
+//Sidebar-nav
 .sidebar-nav{
     padding: 15px 0;
     > .navbar-item {
